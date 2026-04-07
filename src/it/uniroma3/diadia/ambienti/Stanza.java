@@ -94,7 +94,6 @@ public class Stanza {
                 
         risultato.append("\nAttrezzi nella stanza: ");
         for (Attrezzo attrezzo : this.attrezzi) {
-            // AGGIUNGI QUESTA RIGA QUI SOTTO:
             if (attrezzo != null) {
                 risultato.append(attrezzo.toString() + " ");
             }
