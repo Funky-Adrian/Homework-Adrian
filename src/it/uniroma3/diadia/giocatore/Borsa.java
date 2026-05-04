@@ -14,7 +14,7 @@ public class Borsa {
 
 	public Borsa(int pesoMax) {
 		this.pesoMax = pesoMax;
-		this.attrezzi = new Attrezzo[10]; // Capacità fissa di 10 attrezzi
+		this.attrezzi = new Attrezzo[10]; 
 		this.numeroAttrezzi = 0;
 	}
 

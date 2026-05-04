@@ -1,12 +1,16 @@
 package test_diadia;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-
-import it.uniroma3.diadia.attrezzi.Attrezzo;
 import it.uniroma3.diadia.ambienti.Stanza;
+import it.uniroma3.diadia.attrezzi.Attrezzo;
 
 public class StanzaTest {
 	private Stanza stanza;
@@ -14,7 +18,7 @@ public class StanzaTest {
 	void setUp() {
 		this.stanza = new Stanza("Laboratorio");
 	}
-	//Qui 3 test su hasAttrezzo
+	
 	@Test
 	void testHasAttrezzo_True() {
 		Attrezzo martello = new Attrezzo("Martello", 2);
